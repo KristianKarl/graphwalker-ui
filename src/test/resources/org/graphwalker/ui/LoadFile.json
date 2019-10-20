@@ -1,0 +1,89 @@
+/*-
+ * #%L
+ * GraphWalker UI Application
+ * %%
+ * Copyright (C) 2005 - 2017 GraphWalker
+ * %%
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ * #L%
+ */
+{
+  "models": [
+    {
+      "name": "StartGraphWalker",
+      "id": "2838bf62-ab6c-4aaf-b67e-f6dcce5eb754",
+      "generator": "random(edge_coverage(100))",
+      "actions": [],
+      "vertices": [
+        {
+          "id": "faf4a1d2-92da-469f-b410-c0a3fd351946",
+          "name": "v_GraphWalkerNotRunning",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 462.921875,
+            "y": 115.46875
+          }
+        },
+        {
+          "id": "7eada70f-4d63-4a4f-9185-0f73595fc950",
+          "name": "v_GraphWalkerRunning",
+          "sharedState": "GRAPHWALKER_RUNNING",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 446.921875,
+            "y": 297.46875
+          }
+        },
+        {
+          "id": "902ad460-2a54-4dbc-9df2-7cfa48bbf021",
+          "name": "v_ModelLoaded",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 451.921875,
+            "y": 453.46875
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "da6958fa-0d3e-429b-bd09-9b2997066bb4",
+          "name": "e_StartGraphWalker",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "faf4a1d2-92da-469f-b410-c0a3fd351946",
+          "targetVertexId": "7eada70f-4d63-4a4f-9185-0f73595fc950"
+        },
+        {
+          "id": "71ac7a2b-6379-46e9-b29b-b014beec04d8",
+          "name": "e_LoadModel",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "7eada70f-4d63-4a4f-9185-0f73595fc950",
+          "targetVertexId": "902ad460-2a54-4dbc-9df2-7cfa48bbf021"
+        }
+      ],
+      "startElementId": "faf4a1d2-92da-469f-b410-c0a3fd351946"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "models": [
+    {
+      "name": "New Model",
+      "id": "d2565904-dcd4-42aa-a418-0634b2ea459e",
+      "generator": "RandomPath(EdgeCoverage(100))",
+      "startElementId": "48439856-9377-4db2-af0f-db4d8db5913d",
+      "vertices": [
+        {
+          "id": "48439856-9377-4db2-af0f-db4d8db5913d",
+          "name": "A",
+          "properties": {
+            "x": 366.0,
+            "y": 102.0
+          }
+        },
+        {
+          "id": "ac08f5f8-8c12-47e7-a447-36a5f6800c55",
+          "name": "B",
+          "properties": {
+            "x": 640.0,
+            "y": 84.0
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "84214507-5638-4be1-96e0-c48dd4d02665",
+          "name": "b1",
+          "weight": 0.0,
+          "dependency": 0,
+          "sourceVertexId": "48439856-9377-4db2-af0f-db4d8db5913d",
+          "targetVertexId": "ac08f5f8-8c12-47e7-a447-36a5f6800c55"
+        },
+        {
+          "id": "a9330add-2151-40a0-a238-59ae0881c53e",
+          "name": "a",
+          "weight": 0.0,
+          "dependency": 0,
+          "sourceVertexId": "ac08f5f8-8c12-47e7-a447-36a5f6800c55",
+          "targetVertexId": "48439856-9377-4db2-af0f-db4d8db5913d"
+        },
+        {
+          "id": "bf029be7-1f2b-4669-b08e-9a68a38a0ec3",
+          "name": "b2",
+          "weight": 0.0,
+          "dependency": 0,
+          "sourceVertexId": "48439856-9377-4db2-af0f-db4d8db5913d",
+          "targetVertexId": "ac08f5f8-8c12-47e7-a447-36a5f6800c55"
+        },
+        {
+          "id": "ee654c27-e2f3-42b0-9b32-7f538166cb23",
+          "name": "a1",
+          "weight": 0.0,
+          "dependency": 0,
+          "sourceVertexId": "48439856-9377-4db2-af0f-db4d8db5913d",
+          "targetVertexId": "48439856-9377-4db2-af0f-db4d8db5913d"
+        },
+        {
+          "id": "d2fbeb43-0f07-480b-a9ec-c6cb1e1ca4dd",
+          "name": "b3",
+          "weight": 0.0,
+          "dependency": 0,
+          "sourceVertexId": "ac08f5f8-8c12-47e7-a447-36a5f6800c55",
+          "targetVertexId": "ac08f5f8-8c12-47e7-a447-36a5f6800c55"
+        }
+      ]
+    }
+  ]
+}

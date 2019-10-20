@@ -1,0 +1,38 @@
+HEADER<{{
+use strict;
+use warnings;
+
+##
+## 1) Generate perl stub source code:
+##    java -jar graphwalker-4.0.0-SNAPSHOT.jar source -i model.graphml perl.template > model.perl
+##
+## 2) Start graphwalker:
+##    java -jar graphwalker-4.0.0-SNAPSHOT.jar online -s RESTFUL -m model.graphml "random(edge_coverage(100))"
+##
+## 3) Run the per program:
+##    perl login.perl http://localhost:8887/graphwalker
+##
+
+use LWP::Simple;
+
+my $host = $ARGV[0];
+
+while ( get $host."/hasNext" eq "true"){
+  # Get next step from GraphWalker
+  my $step = get $host."/getNext";
+  if ($step ne '') {
+    # Run the step
+    eval( $step ) or die;
+  }
+}
+}}>HEADER
+#
+# This sub routine implements: '{LABEL}'
+#
+sub {LABEL}()
+{
+  print "{LABEL}\n";
+}
+FOOTER<{{
+#End of generated source code
+}}>FOOTER 
